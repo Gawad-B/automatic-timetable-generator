@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ATTG</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>ATTG</h1>
+				<p>An automatic timetable generator that works with multiple algorithms.</p>
+			</header>
+
+		<!-- Signup + Uploads Container -->
+		<section id="signup-uploads">
+			<!-- Upload Buttons / Forms -->
+			<section id="uploads">
+			<!-- Each form uses the same styling as the signup form and will be handled via JS -->
+			<form id="courses-form" class="upload-form" method="post" action="/upload/courses" enctype="multipart/form-data">
+				<!-- visually hide the file input; the button will trigger it -->
+				<input type="file" name="file" id="courses-file" style="display:none" />
+				<input type="button" id="courses-button" value="Courses" />
+			</form>
+
+			<form id="instructors-form" class="upload-form" method="post" action="/upload/instructors" enctype="multipart/form-data">
+				<input type="file" name="file" id="instructors-file" style="display:none" />
+				<input type="button" id="instructors-button" value="Instructors" />
+			</form>
+
+			<form id="rooms-form" class="upload-form" method="post" action="/upload/rooms" enctype="multipart/form-data">
+				<input type="file" name="file" id="rooms-file" style="display:none" />
+				<input type="button" id="rooms-button" value="Rooms" />
+			</form>
+
+			<form id="timeslots-form" class="upload-form" method="post" action="/upload/timeslots" enctype="multipart/form-data">
+				<input type="file" name="file" id="timeslots-file" style="display:none" />
+				<input type="button" id="timeslots-button" value="Timeslots" />
+			</form>
+
+			<form id="sections-form" class="upload-form" method="post" action="/upload/sections" enctype="multipart/form-data">
+				<input type="file" name="file" id="sections-file" style="display:none" />
+				<input type="button" id="sections-button" value="Sections" />
+			</form>
+		</section>
+
+			<!-- Generate button on the right -->
+			<div id="generate-area">
+				<input type="button" id="generate-button" value="Generate" />
+			</div>
+
+		</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://github.com/Gawad-B" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Gawad.</li><li>Credits: <a href="http://gawad163.pythonanywhere.com" target="_blank">Abdelrahman Gawad</a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/static/assets/js/main.js"></script>
+
+	</body>
+</html>
